@@ -9,7 +9,7 @@ print(" ")
 print(" ")
 
 # 定义要执行的Bash命令
-command = "make -j12"
+command = "make -j$(nproc)"
 
 try:
     # 执行Bash命令，并捕获输出
@@ -93,7 +93,7 @@ print(cmd)
 
 os.popen(cmd)
 print(" ")
-print(f"Openocd 脚本执行完成！！！")
+print(f"Openocd 准备脚本执行完成！！！")
 print(f"执行权利移交至Openocd")
-print(" ")
+print("------------------------------------------------------------------------------------- ")
 

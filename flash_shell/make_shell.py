@@ -1,7 +1,7 @@
 import subprocess
 
 # 定义要执行的Bash命令
-command = "make -j12"
+command = "make -j$(nproc)"
 
 try:
     # 执行Bash命令，并捕获输出
